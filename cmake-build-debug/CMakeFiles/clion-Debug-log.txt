@@ -1,4 +1,4 @@
-/home/ibrahim/jetBrainIDES/clion-2022.3.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/ibrahim/jetBrainIDES/clion-2022.3.1/bin/ninja/linux/ninja -G Ninja -S /home/ibrahim/CLionProjects/MathLib -B /home/ibrahim/CLionProjects/MathLib/cmake-build-debug
+/home/ibrahim/clion-2022.3.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/ibrahim/CLionProjects/CLib -B /home/ibrahim/CLionProjects/CLib/cmake-build-debug
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/ibrahim/CLionProjects/MathLib/cmake-build-debug
+-- Build files have been written to: /home/ibrahim/CLionProjects/CLib/cmake-build-debug

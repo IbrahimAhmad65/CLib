@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MathLib::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MathLib-Debug-a58e26a2460b565aea4a.json",
+					"jsonFile" : "target-MathLib-Debug-3494a66229dc7b0aa8f0.json",
 					"name" : "MathLib",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/ibrahim/CLionProjects/MathLib/cmake-build-debug",
-		"source" : "/home/ibrahim/CLionProjects/MathLib"
+		"build" : "/home/ibrahim/CLionProjects/CLib/cmake-build-debug",
+		"source" : "/home/ibrahim/CLionProjects/CLib"
 	},
 	"version" : 
 	{
