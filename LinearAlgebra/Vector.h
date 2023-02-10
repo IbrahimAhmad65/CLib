@@ -59,7 +59,7 @@ public:
 
     double operator*(const Vector &other) const;
 
-    double operator[](int index) const const;
+    double operator[](int index) const;
 
     Vector clone() const;
 

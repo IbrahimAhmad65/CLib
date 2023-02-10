@@ -1,3 +1,4 @@
 /home/ibrahim/CLionProjects/MathLib/cmake-build-debug/CMakeFiles/MathLib.dir
+/home/ibrahim/CLionProjects/MathLib/cmake-build-debug/CMakeFiles/jeferson.dir
 /home/ibrahim/CLionProjects/MathLib/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/ibrahim/CLionProjects/MathLib/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -77,6 +77,7 @@ Matrix Matrix::multiply(const Matrix &other) {
             result.data[i * other.cols + j] = sum;
         }
     }
+    return result;
 }
 
 void Matrix::multiply(double scalar) {
@@ -222,10 +223,11 @@ Matrix Matrix::clone() const {
             clone.set(i, j, this->get(i, j));
         }
     }
+    return clone;
 }
 
 Matrix Matrix::operator*(const Vector &other) {
-    Matrix them = other.toMatrix();
+    Matrix them = vectorToMatrix(other);
     Matrix result = *this * them;
     return result;
 }
@@ -295,6 +297,7 @@ Matrix Matrix::minor(double a, double b) const {
         }
         row++;
     }
+    return result;
 }
 
 Matrix Matrix::solve(const Matrix &other) const {
@@ -308,7 +311,7 @@ Matrix Matrix::solve(const Matrix &other) const {
 }
 
 Matrix Matrix::solve(const Vector &other) const {
-    Matrix them = other.toMatrix();
+    Matrix them = vectorToMatrix(other);
     Matrix result = solve(them);
     return result;
 }
