@@ -9,6 +9,7 @@
 #include "Vector.h"
 
 class Matrix {
+
 public:
     Matrix();
 
@@ -27,7 +28,6 @@ public:
     Matrix multiply(const Matrix &other);
 
     Matrix invert() const;
-
 
 
     void multiply(double scalar);
@@ -88,8 +88,14 @@ public:
     double operator()(int row, int col) const;
 
     [[nodiscard]] double *getData() const;
-    Matrix clone() const;
-    Matrix minor(double a, double b) const;
+
+    [[nodiscard]] Matrix clone() const;
+
+    [[nodiscard]] Matrix minor(double a, double b) const;
+    static Matrix identity(int size);
+    static Matrix vectorToMatrix(const Vector &vector);
+    static Vector matrixToVector(const Matrix &matrix);
+
 private:
 
     int rows;

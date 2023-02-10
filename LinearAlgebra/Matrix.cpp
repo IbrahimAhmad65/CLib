@@ -370,3 +370,33 @@ void Matrix::rrEchelon() {
         lead++;
     }
 }
+
+Matrix Matrix::identity(int size) {
+    Matrix result = Matrix(size, size);
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if (i == j) {
+                result.set(i, j, 1);
+            } else {
+                result.set(i, j, 0);
+            }
+        }
+    }
+    return result;
+}
+
+Matrix Matrix::vectorToMatrix(const Vector &vector) {
+    Matrix result = Matrix(vector.getSize(), 1);
+    for (int i = 0; i < vector.getSize(); i++) {
+        result.set(i, 0, vector.get(i));
+    }
+    return result;
+}
+
+Vector Matrix::matrixToVector(const Matrix &matrix) {
+    Vector result = Vector(matrix.rows);
+    for (int i = 0; i < matrix.rows; i++) {
+        result.set(i, matrix.get(i, 0));
+    }
+    return result;
+}

@@ -6,7 +6,6 @@
 #define MATHLIB_VECTOR_H
 
 
-#include "Matrix.h"
 
 class Vector {
 public:
@@ -19,8 +18,6 @@ public:
     Vector(const Vector &other);
 
     ~Vector();
-
-    Matrix toMatrix();
 
     void add(const Vector &other);
 

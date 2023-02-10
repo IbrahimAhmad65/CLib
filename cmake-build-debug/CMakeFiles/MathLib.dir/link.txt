@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libMathLib.so -o libMathLib.so CMakeFiles/MathLib.dir/library.cpp.o CMakeFiles/MathLib.dir/LinearAlgebra/Matrix.cpp.o CMakeFiles/MathLib.dir/LinearAlgebra/Vector.cpp.o 

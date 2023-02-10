@@ -149,11 +149,3 @@ Vector Vector::clone() const {
     }
     return copy;
 }
-
-Matrix Vector::toMatrix() {
-    Matrix matrix = Matrix(this->size, 1);
-    for (int i = 0; i < this->size; i++) {
-        matrix.set(i, 0, this->data[i]);
-    }
-    return matrix;
-}

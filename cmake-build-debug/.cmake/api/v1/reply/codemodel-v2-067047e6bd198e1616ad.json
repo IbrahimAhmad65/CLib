@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/ibrahim/CLionProjects/CLib/cmake-build-debug",
-		"source" : "/home/ibrahim/CLionProjects/CLib"
+		"build" : "/home/ibrahim/CLionProjects/MathLib/cmake-build-debug",
+		"source" : "/home/ibrahim/CLionProjects/MathLib"
 	},
 	"version" : 
 	{
