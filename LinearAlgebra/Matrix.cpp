@@ -34,7 +34,6 @@ Matrix::Matrix(const Matrix &other) {
 }
 
 Matrix::~Matrix() {
-    delete[] data;
 }
 
 void Matrix::add(const Matrix &other) {
@@ -67,14 +66,14 @@ Matrix Matrix::multiply(const Matrix &other) {
     //         [a31 * b11 + a32 * b21 + a33 * b31, a31 * b12 + a32 * b22 + a33 * b32, a31 * b13 + a32 * b23 + a33 * b33]
 
 
-    Matrix result(this->rows, other.cols);
+    Matrix result =  Matrix(this->rows, other.cols);
     for (int i = 0; i < this->rows; i++) {
         for (int j = 0; j < other.cols; j++) {
             double sum = 0;
             for (int k = 0; k < this->cols; k++) {
                 sum += this->data[i * this->cols + k] * other.data[k * other.cols + j];
             }
-            result.data[i * other.cols + j] = sum;
+            (result).data[i * other.cols + j] = sum;
         }
     }
     return result;
@@ -107,9 +106,10 @@ Matrix Matrix::transpose() const {
 }
 
 void Matrix::print() {
+//    std::cout << "Rows: " << rows << " Cols: " << cols << std::endl;
     for (int i = 0; i < this->rows; i++) {
         for (int j = 0; j < this->cols; j++) {
-            std::cout << this->data[i * this->cols + j] << " ";
+            std::cout << get(i,j) << " ";
         }
         std::cout << std::endl;
     }
@@ -179,8 +179,7 @@ Matrix Matrix::operator-(const Matrix &other) const {
 
 Matrix Matrix::operator*(const Matrix &other) const {
     Matrix selfClone = clone();
-    selfClone.multiply(other);
-    return selfClone;
+    return selfClone.multiply(other);
 }
 
 Matrix Matrix::operator*(double scalar) const {

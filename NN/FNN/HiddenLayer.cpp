@@ -61,7 +61,9 @@ void HiddenLayer::setActivations(Matrix activations) {
 }
 
 void HiddenLayer::updateActivations(Matrix activations) {
-    this->activations = weights*activations + biases;
+
+    this->activations = weights * activations + biases;
+
 }
 
 Matrix HiddenLayer::getActivations() {
