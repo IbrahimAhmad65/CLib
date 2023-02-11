@@ -165,25 +165,25 @@ void Matrix::operator/=(double scalar) {
     divide(scalar);
 }
 
-Matrix Matrix::operator+(const Matrix &other) {
+Matrix Matrix::operator+(const Matrix &other) const {
     Matrix selfClone = clone();
     selfClone.add(other);
     return selfClone;
 }
 
-Matrix Matrix::operator-(const Matrix &other) {
+Matrix Matrix::operator-(const Matrix &other) const {
     Matrix selfClone = clone();
     selfClone.subtract(other);
     return selfClone;
 }
 
-Matrix Matrix::operator*(const Matrix &other) {
+Matrix Matrix::operator*(const Matrix &other) const {
     Matrix selfClone = clone();
     selfClone.multiply(other);
     return selfClone;
 }
 
-Matrix Matrix::operator*(double scalar) {
+Matrix Matrix::operator*(double scalar) const {
     Matrix selfClone = clone();
     selfClone.multiply(scalar);
     return selfClone;

@@ -69,15 +69,15 @@ public:
 
     void operator/=(double scalar);
 
-    Matrix operator+(const Matrix &other);
+    Matrix operator+(const Matrix &other) const;
 
-    Matrix operator-(const Matrix &other);
+    Matrix operator-(const Matrix &other) const;
 
-    Matrix operator*(const Matrix &other);
+    Matrix operator*(const Matrix &other) const;
 
     Matrix operator*(const Vector &other);
 
-    Matrix operator*(double scalar);
+    Matrix operator*(double scalar) const;
 
     Matrix operator/(double scalar);
 

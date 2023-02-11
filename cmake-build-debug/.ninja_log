@@ -1,0 +1,9 @@
+# ninja log v5
+320	347	1675995442121128885	jeferson	d7745b2d89f679ce
+0	188	1675995441964450693	CMakeFiles/jeferson.dir/LinearAlgebra/Vector.cpp.o	7c71458d0c5e39d9
+0	184	1675994412761226268	CMakeFiles/MathLib.dir/LinearAlgebra/Vector.cpp.o	49fbcdf916bcb62a
+0	175	1675995441951116380	CMakeFiles/jeferson.dir/library.cpp.o	6c6edd9a950851a9
+170	198	1675995412242290142	libMathLib.so	4d3d9616140a1920
+0	304	1675994494059619325	CMakeFiles/MathLib.dir/LinearAlgebra/Matrix.cpp.o	f964cf1d6957b6c3
+0	320	1675995442094460257	CMakeFiles/jeferson.dir/LinearAlgebra/Matrix.cpp.o	293c26196a891462
+0	170	1675995412215621561	CMakeFiles/MathLib.dir/library.cpp.o	8603e2406a8e8c2d

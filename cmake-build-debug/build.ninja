@@ -115,6 +115,12 @@ build CMakeFiles/jeferson.dir/LinearAlgebra/Vector.cpp.o: CXX_COMPILER__jeferson
   OBJECT_DIR = CMakeFiles/jeferson.dir
   OBJECT_FILE_DIR = CMakeFiles/jeferson.dir/LinearAlgebra
 
+build CMakeFiles/jeferson.dir/NN/FNN/Layer.cpp.o: CXX_COMPILER__jeferson_Debug /home/ibrahim/CLionProjects/MathLib/NN/FNN/Layer.cpp || cmake_object_order_depends_target_jeferson
+  DEP_FILE = CMakeFiles/jeferson.dir/NN/FNN/Layer.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/jeferson.dir
+  OBJECT_FILE_DIR = CMakeFiles/jeferson.dir/NN/FNN
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target jeferson
@@ -123,7 +129,7 @@ build CMakeFiles/jeferson.dir/LinearAlgebra/Vector.cpp.o: CXX_COMPILER__jeferson
 #############################################
 # Link the executable jeferson
 
-build jeferson: CXX_EXECUTABLE_LINKER__jeferson_Debug CMakeFiles/jeferson.dir/library.cpp.o CMakeFiles/jeferson.dir/LinearAlgebra/Matrix.cpp.o CMakeFiles/jeferson.dir/LinearAlgebra/Vector.cpp.o
+build jeferson: CXX_EXECUTABLE_LINKER__jeferson_Debug CMakeFiles/jeferson.dir/library.cpp.o CMakeFiles/jeferson.dir/LinearAlgebra/Matrix.cpp.o CMakeFiles/jeferson.dir/LinearAlgebra/Vector.cpp.o CMakeFiles/jeferson.dir/NN/FNN/Layer.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/jeferson.dir
   POST_BUILD = :
